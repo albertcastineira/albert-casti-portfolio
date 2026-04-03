@@ -1,4 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Albert Castineira — Portfolio
+
+Portfolio personal de Albert Castineira, desarrollador Full Stack. Construido con Next.js 16, TypeScript, Tailwind CSS y next-intl, con soporte bilingüe (ES / EN), SEO técnico completo y diseño minimalista.
+
+![Screenshot del portfolio](public/Screenshot.png)
+
+## Características
+
+- **Bilingüe** (ES / EN) con next-intl y prefijo de locale
+- **SEO técnico**: canonical, hreflang, JSON-LD (Person + WebSite), sitemap, robots.txt
+- **Secciones**: Hero, Sobre mí, Proyectos, Footer
+- **Diseño dark** con tipografía Space Grotesk y paleta minimalista
+- **Desplegable en Vercel** sin configuración adicional
+
+## Stack
+
+- [Next.js 16](https://nextjs.org) + Turbopack
+- TypeScript (strict)
+- Tailwind CSS v4
+- next-intl v4
+- react-icons
+
+---
 
 ## Getting Started
 
