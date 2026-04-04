@@ -110,14 +110,14 @@ export const literals = {
         },
         {
           period: "Enero 2023 - Marzo 2023",
-          role: "Desarrollador Full Stack",
+          role: "Desarrollador de Software",
           company: "b2brouter",
           description:
             "Desarrollo de una plataforma de facturacion con Ruby on Rails, Tailwind-CSS y PostgreSQL. Lleve a cabo parte de la renovacion del frontend. Implementacion y desarrollo de un sistema de certificados digitales para las facturas, incluyendo sus correspondientes test. En backend realizaba pruebas y validaciones de facturas.",
         },
         {
           period: "Enero 2021 - Diciembre 2022",
-          role: "Desarrollador Full Stack",
+          role: "Desarrollador de Software",
           company: "Databot Technologies",
           description:
             "Desarrollo de varias plataformas de gestion de objetos personalizadas para cada cliente. El stack utilizado fue: Ruby on Rails, Bootstrap, Tailwind CSS, React, Vanilla JS, CSS y MySQL. Creacion de landing pages pixel perfect para diversos clientes internacionales. Configuracion de un motor de busqueda SOLR.",
@@ -304,14 +304,14 @@ export const literals = {
         },
         {
           period: "January 2023 - March 2023",
-          role: "Full Stack Developer",
+          role: "Software Developer",
           company: "b2brouter",
           description:
             "Development of a billing platform with Ruby on Rails, Tailwind-CSS, PostgreSQL. I was carrying out part of the frontend renovation. Implementation and development of a digital certificate system for invoices, including their corresponding tests. In backend I was performing tests and validations of invoices.",
         },
         {
           period: "January 2021 - December 2022",
-          role: "Full Stack Developer",
+          role: "Software Developer",
           company: "Databot Technologies",
           description:
             "Development of several object management platforms customized for each client. The tech stack was: Ruby on Rails, Bootstrap, Tailwind CSS, React, Vanilla Js, CSS, MySQL. Creation of pixel perfect landing pages for various international clients. Configuration of a SOLR search engine.",
