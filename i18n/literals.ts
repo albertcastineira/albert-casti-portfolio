@@ -20,7 +20,7 @@ export const literals = {
         "Desarrollador Full Stack con más de 3 años de experiencia, ubicado en Barcelona, España.",
       imageAlt: "Foto de perfil de Albert Castiñeira",
       button: "CONTACTAME",
-      contactEmail: "albertcastineira@gmail.com",
+      contactEmail: "albertcastiaran@gmail.com",
       linkedinUrl: "https://www.linkedin.com/in/albert-casti%C3%B1eira-aranda/",
       githubUrl: "https://github.com/albertcastineira",
       decoTopRight: [
@@ -214,7 +214,7 @@ export const literals = {
         "Full Stack Developer with more than 3 years of experience, based in Barcelona, Spain.",
       imageAlt: "Profile photo of Albert Castiñeira",
       button: "CONTACT_ME",
-      contactEmail: "albertcastineira@gmail.com",
+      contactEmail: "albertcastiaran@gmail.com",
       linkedinUrl: "https://www.linkedin.com/in/albert-casti%C3%B1eira-aranda/",
       githubUrl: "https://github.com/albertcastineira",
       decoTopRight: [
