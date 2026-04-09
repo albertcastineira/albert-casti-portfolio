@@ -15,9 +15,9 @@ export default function ExperienceSection({
   return (
     <section
       id="experience"
-      className="w-full flex justify-center px-4 py-8 md:min-h-screen md:items-center md:py-10"
+      className="w-full flex justify-center px-4 py-8 md:py-10 lg:min-h-screen lg:items-center"
     >
-      <div className="w-full max-w-5xl md:max-h-[calc(100svh-5rem)] md:overflow-y-auto">
+      <div className="w-full max-w-5xl lg:max-h-[calc(100svh-5rem)] lg:overflow-y-auto">
         <div className="flex flex-col items-center text-center gap-4 mb-7 md:mb-8">
           <div className="inline-flex items-center border border-(--primary) px-6 py-1 text-(--primary)">
             <span className={`${spaceGrotesk.className} text-xs tracking-wide`}>

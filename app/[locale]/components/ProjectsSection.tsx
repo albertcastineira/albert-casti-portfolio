@@ -23,9 +23,9 @@ export default function ProjectsSection({ literals }: ProjectsSectionProps) {
   return (
     <section
       id="projects"
-      className="w-full px-4 py-8 md:min-h-screen md:py-10"
+      className="w-full px-4 py-8 md:py-10 lg:min-h-screen"
     >
-      <div className="mx-auto flex w-full max-w-6xl flex-col justify-center md:min-h-[calc(100svh-5rem)]">
+      <div className="mx-auto flex w-full max-w-6xl flex-col justify-center lg:min-h-[calc(100svh-5rem)]">
         <div className="mb-8 flex flex-col items-center gap-4 text-center md:mb-10">
           <div className="inline-flex items-center border border-(--primary) px-6 py-1 text-(--primary)">
             <span className={`${spaceGrotesk.className} text-xs tracking-wide`}>
@@ -99,7 +99,7 @@ export default function ProjectsSection({ literals }: ProjectsSectionProps) {
             </div>
           </article>
 
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-3 md:gap-6">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
             {otherProjects.map((project) => (
               <article
                 key={project.title}

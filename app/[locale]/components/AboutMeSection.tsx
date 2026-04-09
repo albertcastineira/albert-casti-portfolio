@@ -13,9 +13,9 @@ export default function AboutMeSection({ literals }: AboutMeSectionProps) {
   return (
     <section
       id="about"
-      className="w-full flex justify-center px-4 py-8 md:min-h-screen md:items-center md:py-10"
+      className="w-full flex justify-center px-4 py-8 md:py-10 lg:min-h-screen lg:items-center"
     >
-      <div className="w-full max-w-6xl md:max-h-[calc(100svh-5rem)] flex flex-col justify-center">
+      <div className="w-full max-w-6xl flex flex-col justify-center">
         <div className="flex flex-col items-center text-center gap-4 mb-8 md:mb-10">
           <div className="inline-flex items-center border border-(--primary) px-6 py-1 text-(--primary)">
             <span className={`${spaceGrotesk.className} text-xs tracking-wide`}>
@@ -32,11 +32,11 @@ export default function AboutMeSection({ literals }: AboutMeSectionProps) {
           </p>
         </div>
 
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-6">
           {literals.blocks.map((block) => (
             <article
               key={block.title}
-              className="bg-[#0A0A0A] border-l-4 border-(--primary) px-5 md:px-6 py-5 md:py-6 min-h-55"
+              className="bg-[#0A0A0A] border-l-4 border-(--primary) px-5 md:px-6 py-5 md:py-6"
             >
               <h3
                 className={`${spaceGrotesk.className} text-white text-lg md:text-2xl leading-tight mb-6`}
