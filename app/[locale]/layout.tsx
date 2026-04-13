@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { Inter } from "next/font/google";
 import { isAppLocale, literals } from "../../i18n/literals";
+import { siteUrl } from "../../lib/seo";
 
 const interFont = Inter({
   variable: "--font-inter",
@@ -10,7 +11,6 @@ const interFont = Inter({
 });
 
 const locales = ["en", "es"];
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -44,6 +44,14 @@ export async function generateMetadata({
       description: heroDescription,
       locale: resolvedLocale === "es" ? "es_ES" : "en_US",
       url: `${siteUrl}/${resolvedLocale}`,
+      images: [
+        {
+          url: `${siteUrl}/opengraph-image`,
+          width: 1200,
+          height: 630,
+          alt: "Albert Castineira portfolio preview",
+        },
+      ],
     },
   };
 }

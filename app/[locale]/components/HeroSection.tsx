@@ -66,11 +66,11 @@ export default function HeroSection({ literals }: HeroSectionProps) {
 
         <div className="md:col-span-6 flex flex-col items-center md:items-start text-center md:text-left gap-5">
           <Badge literal={literals.badge} />
-          <h2
+          <h1
             className={`${spaceGrotesk.className} text-white md:text-6xl text-4xl font-bold leading-tight max-w-3xl`}
           >
             {literals.title}
-          </h2>
+          </h1>
           <p className="text-[#8C8C8C] text-base md:text-lg leading-relaxed max-w-2xl">
             {literals.description}
           </p>

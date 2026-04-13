@@ -19,9 +19,38 @@ export default async function Home({
   }
 
   const pageLiterals = literals[locale];
+  const projectsJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name:
+      locale === "es"
+        ? "Proyectos de Albert Castineira"
+        : "Albert Castineira Projects",
+    itemListElement: pageLiterals.projects.items.map((project, index) => ({
+      "@type": "SoftwareSourceCode",
+      position: index + 1,
+      name: project.title,
+      description: project.description,
+      ...("githubUrl" in project && project.githubUrl
+        ? { codeRepository: project.githubUrl }
+        : {}),
+      ...("liveUrl" in project && project.liveUrl
+        ? { url: project.liveUrl }
+        : {}),
+      programmingLanguage: project.technologies,
+      author: {
+        "@type": "Person",
+        name: "Albert Castineira",
+      },
+    })),
+  };
 
   return (
     <main className="flex min-h-screen flex-col">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(projectsJsonLd) }}
+      />
       <Header
         locale={locale}
         literals={pageLiterals.header}

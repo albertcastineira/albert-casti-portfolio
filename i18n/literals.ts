@@ -2,11 +2,11 @@ export const literals = {
   es: {
     header: {
       brand: "ALBERT_DEV",
-      aboutMe: "Sobre mi",
+      aboutMe: "Sobre mí",
       experience: "Experiencia",
       projects: "Proyectos",
-      openMenu: "Abrir menu",
-      closeMenu: "Cerrar menu",
+      openMenu: "Abrir menú",
+      closeMenu: "Cerrar menú",
     },
     languageSwitcher: {
       ariaLabel: "Cambiar idioma",
@@ -37,20 +37,20 @@ export const literals = {
       sectionLabel: "SECCION 01",
       title: "SOBRE_MI",
       description:
-        "Soy desarrollador Full Stack con una base solida en frontend y backend, enfocado en crear productos web escalables, claros y mantenibles. Me interesa especialmente construir interfaces cuidadas, rendimiento real en produccion y arquitecturas que permitan evolucionar rapido sin perder calidad tecnica.",
+        "Soy desarrollador Full Stack con una base sólida en frontend y backend, enfocado en crear productos web escalables, claros y mantenibles. Me interesa especialmente construir interfaces cuidadas, rendimiento real en producción y arquitecturas que permitan evolucionar rápido sin perder calidad técnica.",
       blocks: [
         {
           title: "SKILLS",
           items: [
-            "Codigo limpio",
+            "Código limpio",
             "Desarrollo UI",
             "APIs REST",
             "Testing",
             "Rendimiento",
             "Responsive Design",
-            "Metodologias agiles",
-            "Resolucion de problemas",
-            "Pensamiento critico",
+            "Metodologías ágiles",
+            "Resolución de problemas",
+            "Pensamiento crítico",
           ],
         },
         {
@@ -106,21 +106,21 @@ export const literals = {
           role: "Desarrollador de Software",
           company: "SopraSteria",
           description:
-            "Desarrollo de múltiples aplicaciones en React. Creación y mantenimiento de Single Page Applications usando como base ReactJS. Uso de herramientas y frameworks internos para el desarrollo de aplicaciones bancarias. Desarrollo e implementación de un flujo frontend para la realización de transferencias bancarias, guiado por un panel de pasos intuitivo adaptado a la experiencia del usuario. Creacion de test unitarios y de integracion con Jest y React Testing Library.",
+            "Desarrollo de múltiples aplicaciones en React. Creación y mantenimiento de Single Page Applications usando como base ReactJS. Uso de herramientas y frameworks internos para el desarrollo de aplicaciones bancarias. Desarrollo e implementación de un flujo frontend para la realización de transferencias bancarias, guiado por un panel de pasos intuitivo adaptado a la experiencia del usuario. Creación de test unitarios y de integración con Jest y React Testing Library.",
         },
         {
           period: "Enero 2023 - Marzo 2023",
           role: "Desarrollador de Software",
           company: "b2brouter",
           description:
-            "Desarrollo de una plataforma de facturacion con Ruby on Rails, Tailwind-CSS y PostgreSQL. Lleve a cabo parte de la renovacion del frontend. Implementacion y desarrollo de un sistema de certificados digitales para las facturas, incluyendo sus correspondientes test. En backend realizaba pruebas y validaciones de facturas.",
+            "Desarrollo de una plataforma de facturación con Ruby on Rails, Tailwind-CSS y PostgreSQL. Llevé a cabo parte de la renovación del frontend. Implementación y desarrollo de un sistema de certificados digitales para las facturas, incluyendo sus correspondientes test. En backend realizaba pruebas y validaciones de facturas.",
         },
         {
           period: "Enero 2021 - Diciembre 2022",
           role: "Desarrollador de Software",
           company: "Databot Technologies",
           description:
-            "Desarrollo de varias plataformas de gestion de objetos personalizadas para cada cliente. El stack utilizado fue: Ruby on Rails, Bootstrap, Tailwind CSS, React, Vanilla JS, CSS y MySQL. Creacion de landing pages pixel perfect para diversos clientes internacionales. Configuracion de un motor de busqueda SOLR.",
+            "Desarrollo de varias plataformas de gestión de objetos personalizadas para cada cliente. El stack utilizado fue: Ruby on Rails, Bootstrap, Tailwind CSS, React, Vanilla JS, CSS y MySQL. Creación de landing pages pixel perfect para diversos clientes internacionales. Configuración de un motor de búsqueda SOLR.",
         },
       ],
     },
@@ -128,7 +128,7 @@ export const literals = {
       sectionLabel: "SECCION 03",
       title: "PROYECTOS",
       description:
-        "Una seleccion de productos y experimentos que he disenado y desarrollado, desde aplicaciones completas hasta pruebas enfocadas en tecnologia, UX y rendimiento.",
+        "Una selección de productos y experimentos que he diseñado y desarrollado, desde aplicaciones completas hasta pruebas enfocadas en tecnología, UX y rendimiento.",
       featuredLabel: "PROYECTO_DESTACADO",
       liveLabel: "VER_PROYECTO",
       sourceLabel: "VER_CODIGO",
@@ -136,7 +136,7 @@ export const literals = {
         {
           title: "Albert Casti Portfolio",
           description:
-            "Este portfolio personal ha sido disenado y programado por mi desde 0, definiendo arquitectura, UI, experiencia responsive y sistema de internacionalizacion completo.",
+            "Este portfolio personal ha sido diseñado y programado por mí desde 0, definiendo arquitectura, UI, experiencia responsive y sistema de internacionalización completo.",
           technologies: ["Next.js", "TypeScript", "TailwindCSS", "Figma"],
           githubUrl:
             "https://github.com/albertcastineira/albert-casti-portfolio",
@@ -144,14 +144,14 @@ export const literals = {
         {
           title: "BrowserHub",
           description:
-            "Una version moderna y mas estable de BrowserHub. Permite crear, editar y eliminar categorias y sitios desde un panel, ademas de incluir una amplia personalizacion visual.",
+            "Una versión moderna y más estable de BrowserHub. Permite crear, editar y eliminar categorías y sitios desde un panel, además de incluir una amplia personalización visual.",
           technologies: ["ReactJS", "MaterialUI", "Figma"],
           liveUrl: "https://browserhub.vercel.app/",
         },
         {
           title: "ANT Storage",
           description:
-            "Aplicacion de gestion de inventario para almacenes, enfocada en accesibilidad y velocidad. Fue desarrollada en 4 semanas por un equipo de 3 personas, cubriendo frontend y backend.",
+            "Aplicación de gestión de inventario para almacenes, enfocada en accesibilidad y velocidad. Fue desarrollada en 4 semanas por un equipo de 3 personas, cubriendo frontend y backend.",
           technologies: [
             "Java",
             "SpringBoot",
@@ -165,21 +165,21 @@ export const literals = {
         {
           title: "Vue Reading List",
           description:
-            "Un proyecto pequeno para aprender las bases de Vue y el uso de local storage. Es una lista de lectura responsive con filtros de busqueda.",
+            "Un proyecto pequeño para aprender las bases de Vue y el uso de local storage. Es una lista de lectura responsive con filtros de búsqueda.",
           technologies: ["VueJs", "TailwindCSS"],
           liveUrl: "https://vue-reading-list.vercel.app/",
         },
         {
           title: "BrowserHub Beta",
           description:
-            "Una primera version centrada en resolver el problema de acumular demasiados marcadores en el navegador y perder tiempo buscandolos.",
+            "Una primera versión centrada en resolver el problema de acumular demasiados marcadores en el navegador y perder tiempo buscándolos.",
           technologies: ["ReactJS", "TailwindCSS", "Figma"],
           liveUrl: "https://albertcastineira.github.io/react-browserhub/",
         },
         {
           title: "Lunaris Live Demo",
           description:
-            "Demo en vivo del proyecto Lunaris, enfocada en una experiencia moderna, visual y fluida en navegacion y presentacion.",
+            "Demo en vivo del proyecto Lunaris, enfocada en una experiencia moderna, visual y fluida en navegación y presentación.",
           technologies: ["ReactJS", "TailwindCSS", "Figma"],
           liveUrl: "https://lunaris-live-demo.vercel.app/",
         },
@@ -248,7 +248,7 @@ export const literals = {
           ],
         },
         {
-          title: "PROGRAMING_LANGUAGES",
+          title: "PROGRAMMING_LANGUAGES",
           items: [
             "JavaScript",
             "TypeScript",
@@ -314,7 +314,7 @@ export const literals = {
           role: "Software Developer",
           company: "Databot Technologies",
           description:
-            "Development of several object management platforms customized for each client. The tech stack was: Ruby on Rails, Bootstrap, Tailwind CSS, React, Vanilla Js, CSS, MySQL. Creation of pixel perfect landing pages for various international clients. Configuration of a SOLR search engine.",
+            "Development of several object management platforms customized for each client. The tech stack was: Ruby on Rails, Bootstrap, Tailwind CSS, React, Vanilla JS, CSS, MySQL. Creation of pixel perfect landing pages for various international clients. Configuration of a SOLR search engine.",
         },
       ],
     },

@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import { siteUrl, siteUrlObject } from "../lib/seo";
 import "./globals.css";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
-
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: siteUrlObject,
   title: {
     default: "Albert Castineira | Full Stack Developer",
     template: "%s | Albert Castineira",
@@ -31,9 +30,6 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
     apple: "/favicon.ico",
   },
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     type: "website",
     url: siteUrl,
@@ -43,10 +39,10 @@ export const metadata: Metadata = {
       "Portfolio de Albert Castineira, Full Stack Developer en Barcelona especializado en React, Next.js y aplicaciones web modernas.",
     images: [
       {
-        url: "/AlbertCastiñeira.jpg",
-        width: 700,
-        height: 700,
-        alt: "Albert Castineira - Full Stack Developer",
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Albert Castineira portfolio preview",
       },
     ],
     locale: "es_ES",
@@ -56,7 +52,7 @@ export const metadata: Metadata = {
     title: "Albert Castineira | Full Stack Developer",
     description:
       "Portfolio de Albert Castineira, Full Stack Developer en Barcelona especializado en React, Next.js y aplicaciones web modernas.",
-    images: ["/AlbertCastiñeira.jpg"],
+    images: ["/opengraph-image"],
     creator: "@albertcastineira",
   },
   robots: {
