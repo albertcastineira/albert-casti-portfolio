@@ -2,7 +2,13 @@
 
 Portfolio personal de Albert Castineira, desarrollador Full Stack. Construido con Next.js 16, TypeScript, Tailwind CSS y next-intl, con soporte bilingüe (ES / EN), SEO técnico completo y diseño minimalista.
 
-![Screenshot del portfolio](public/Screenshot.png)
+<a href="https://albert-casti-portfolio.vercel.app">
+  <img 
+    src="https://albert-casti-portfolio.vercel.app/opengraph-image" 
+    alt="Preview de mi portfolio"
+    width="500"
+  />
+</a>
 
 ## Características
 
