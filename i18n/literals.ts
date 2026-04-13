@@ -18,6 +18,8 @@ export const literals = {
       title: "Albert Castiñeira",
       description:
         "Desarrollador Full Stack con más de 3 años de experiencia, ubicado en Barcelona, España.",
+      seoDescription:
+        "Desarrollador Full Stack con más de 3 años de experiencia en Barcelona. Especializado en React, Next.js y Ruby on Rails. Explora mis proyectos, experiencia laboral y habilidades técnicas.",
       imageAlt: "Foto de perfil de Albert Castiñeira",
       button: "CONTACTAME",
       contactEmail: "albertcastiaran@gmail.com",
@@ -192,6 +194,14 @@ export const literals = {
       linkedinAriaLabel: "LinkedIn",
       githubAriaLabel: "GitHub",
     },
+    notFound: {
+      code: "ERROR 404",
+      title: "Esta página no existe",
+      description:
+        "Puede que la URL esté mal escrita o que el contenido se haya movido. Puedes volver al inicio para seguir navegando por el portfolio.",
+      goHome: "Ir al inicio",
+      reportBrokenLink: "Reportar enlace roto",
+    },
   },
   en: {
     header: {
@@ -212,6 +222,8 @@ export const literals = {
       title: "Albert Castiñeira",
       description:
         "Full Stack Developer with more than 3 years of experience, based in Barcelona, Spain.",
+      seoDescription:
+        "Full Stack Developer with over 3 years of experience based in Barcelona, Spain. Specialized in React, Next.js and Ruby on Rails. Browse my projects, work experience and technical skills.",
       imageAlt: "Profile photo of Albert Castiñeira",
       button: "CONTACT_ME",
       contactEmail: "albertcastiaran@gmail.com",
@@ -385,6 +397,14 @@ export const literals = {
       githubUrl: "https://github.com/albertcastineira",
       linkedinAriaLabel: "LinkedIn",
       githubAriaLabel: "GitHub",
+    },
+    notFound: {
+      code: "ERROR 404",
+      title: "This page does not exist",
+      description:
+        "The URL may be misspelled or the content may have moved. You can return to the homepage and continue browsing the portfolio.",
+      goHome: "Go home",
+      reportBrokenLink: "Report broken link",
     },
   },
 } as const;

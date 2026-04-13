@@ -52,14 +52,14 @@ export default function HeroSection({ literals }: HeroSectionProps) {
 
       <div className="relative z-10 w-full max-w-7xl grid grid-cols-1 md:grid-cols-10 gap-10 md:gap-14 items-center">
         <div className="md:col-span-4 flex justify-center">
-          <div className="w-full max-w-55 md:max-w-[320px] aspect-square overflow-hidden border-4 border-white bg-neutral-900">
+          <div className="relative w-full max-w-55 md:max-w-[320px] aspect-square overflow-hidden border-4 border-white bg-neutral-900">
             <Image
               src="/AlbertCastiñeira.jpg"
               alt={literals.imageAlt}
-              width={700}
-              height={700}
+              fill
+              sizes="(max-width: 768px) 220px, 320px"
               priority
-              className="w-full h-full object-cover"
+              className="object-cover"
             />
           </div>
         </div>
@@ -80,19 +80,19 @@ export default function HeroSection({ literals }: HeroSectionProps) {
               href={literals.linkedinUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-(--primary) hover:opacity-80 transition"
+              className="group inline-flex items-center justify-center rounded-full text-(--primary) transition-all duration-300 ease-out hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(255,84,75,0.24)] active:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--primary) focus-visible:ring-offset-2 focus-visible:ring-offset-[#131313]"
               aria-label="LinkedIn"
             >
-              <FaLinkedin className="w-8 h-8 sm:w-9 sm:h-9" />
+              <FaLinkedin className="w-8 h-8 sm:w-9 sm:h-9 transition-transform duration-300 ease-out group-hover:scale-105" />
             </a>
             <a
               href={literals.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-(--primary) hover:opacity-80 transition"
+              className="group inline-flex items-center justify-center rounded-full text-(--primary) transition-all duration-300 ease-out hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(255,84,75,0.24)] active:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--primary) focus-visible:ring-offset-2 focus-visible:ring-offset-[#131313]"
               aria-label="GitHub"
             >
-              <FaGithub className="w-8 h-8 sm:w-9 sm:h-9" />
+              <FaGithub className="w-8 h-8 sm:w-9 sm:h-9 transition-transform duration-300 ease-out group-hover:scale-105" />
             </a>
           </div>
         </div>

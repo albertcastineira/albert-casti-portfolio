@@ -24,13 +24,13 @@ export async function generateMetadata({
   const { locale } = await params;
   const resolvedLocale = isAppLocale(locale) ? locale : "es";
   const pageTitle = "Albert Castineira | Full Stack Developer";
-  const heroDescription = literals[resolvedLocale].hero.description;
+  const seoDescription = literals[resolvedLocale].hero.seoDescription;
 
   return {
     title: {
       absolute: pageTitle,
     },
-    description: heroDescription,
+    description: seoDescription,
     alternates: {
       canonical: `${siteUrl}/${resolvedLocale}`,
       languages: {
@@ -41,7 +41,7 @@ export async function generateMetadata({
     },
     openGraph: {
       title: pageTitle,
-      description: heroDescription,
+      description: seoDescription,
       locale: resolvedLocale === "es" ? "es_ES" : "en_US",
       url: `${siteUrl}/${resolvedLocale}`,
       images: [
@@ -98,23 +98,18 @@ export default async function LocaleLayout({
   };
 
   return (
-    <html
-      lang={resolvedLocale}
-      className={`${interFont.className} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col bg-[#131313]">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
-        />
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <div className={`${interFont.className} contents`}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+      />
+      <NextIntlClientProvider locale={resolvedLocale} messages={messages}>
+        {children}
+      </NextIntlClientProvider>
+    </div>
   );
 }

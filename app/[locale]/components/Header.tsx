@@ -37,7 +37,7 @@ export default function Header({
         <Link
           href="/"
           locale={locale}
-          className={`${space_Grotesk.className} text-2xl font-bold text-(--primary) hover:opacity-85 transition`}
+          className={`${space_Grotesk.className} text-2xl font-bold text-(--primary) transition-all duration-200 hover:opacity-90 hover:drop-shadow-[0_0_14px_rgba(255,84,75,0.45)]`}
         >
           {literals.brand}
         </Link>
@@ -78,39 +78,48 @@ export default function Header({
             aria-label={
               isMobileMenuOpen ? literals.closeMenu : literals.openMenu
             }
-            className="text-white hover:text-(--primary) transition p-2 cursor-pointer"
+            className="text-white hover:text-(--primary) transition-all duration-200 p-2 cursor-pointer"
           >
-            {isMobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
+            {isMobileMenuOpen ? (
+              <X size={22} className="transition-transform duration-200" />
+            ) : (
+              <Menu size={22} className="transition-transform duration-200" />
+            )}
           </button>
         </div>
 
-        {isMobileMenuOpen && (
-          <div className="absolute top-full left-0 right-0 md:hidden bg-[#0E0E0E] px-4 pb-4 z-20">
-            <div className="flex flex-col gap-2 pt-3">
-              <a
-                href="#about"
-                onClick={closeMobileMenu}
-                className={`${space_Grotesk.className} font-light text-white py-3 px-2 rounded hover:bg-neutral-800 transition`}
-              >
-                {literals.aboutMe}
-              </a>
-              <a
-                href="#experience"
-                onClick={closeMobileMenu}
-                className={`${space_Grotesk.className} font-light text-white py-3 px-2 rounded hover:bg-neutral-800 transition`}
-              >
-                {literals.experience}
-              </a>
-              <a
-                href="#projects"
-                onClick={closeMobileMenu}
-                className={`${space_Grotesk.className} font-light text-white py-3 px-2 rounded hover:bg-neutral-800 transition`}
-              >
-                {literals.projects}
-              </a>
-            </div>
+        <div
+          className={`absolute top-full left-0 right-0 md:hidden bg-[#0E0E0E] px-4 z-20 overflow-hidden transition-all duration-300 ease-out ${
+            isMobileMenuOpen
+              ? "max-h-64 opacity-100 pb-4"
+              : "max-h-0 opacity-0 pb-0 pointer-events-none"
+          }`}
+          aria-hidden={!isMobileMenuOpen}
+        >
+          <div className="flex flex-col gap-2 pt-3">
+            <a
+              href="#about"
+              onClick={closeMobileMenu}
+              className={`${space_Grotesk.className} font-light text-white py-3 px-2 rounded hover:bg-neutral-800 transition-all duration-200`}
+            >
+              {literals.aboutMe}
+            </a>
+            <a
+              href="#experience"
+              onClick={closeMobileMenu}
+              className={`${space_Grotesk.className} font-light text-white py-3 px-2 rounded hover:bg-neutral-800 transition-all duration-200`}
+            >
+              {literals.experience}
+            </a>
+            <a
+              href="#projects"
+              onClick={closeMobileMenu}
+              className={`${space_Grotesk.className} font-light text-white py-3 px-2 rounded hover:bg-neutral-800 transition-all duration-200`}
+            >
+              {literals.projects}
+            </a>
           </div>
-        )}
+        </div>
       </nav>
     </header>
   );
