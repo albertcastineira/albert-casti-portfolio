@@ -1,6 +1,7 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Albert Castineira - Full Stack Developer";
+export const alt =
+  "Portfolio profesional de Albert Castineira con proyectos, experiencia y stack Full Stack";
 export const size = {
   width: 1200,
   height: 630,
@@ -17,9 +18,9 @@ export default function OpenGraphImage() {
         position: "relative",
         overflow: "hidden",
         background:
-          "linear-gradient(135deg, #0a0a0a 0%, #121212 45%, #1a1a1a 100%)",
-        color: "#f5f5f5",
-        fontFamily: "Inter, ui-sans-serif, system-ui",
+          "linear-gradient(135deg, #131313 0%, #0e0e0e 45%, #1b1b1b 100%)",
+        color: "#ffffff",
+        fontFamily: "'Space Grotesk', Inter, ui-sans-serif, system-ui",
       }}
     >
       <div
@@ -31,7 +32,7 @@ export default function OpenGraphImage() {
           height: 420,
           borderRadius: 9999,
           background:
-            "radial-gradient(circle, rgba(249,181,172,0.35) 0%, rgba(249,181,172,0) 70%)",
+            "radial-gradient(circle, rgba(255,84,75,0.36) 0%, rgba(255,84,75,0) 70%)",
         }}
       />
       <div
@@ -43,7 +44,7 @@ export default function OpenGraphImage() {
           height: 500,
           borderRadius: 9999,
           background:
-            "radial-gradient(circle, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0) 72%)",
+            "radial-gradient(circle, rgba(255,84,75,0.2) 0%, rgba(255,84,75,0) 72%)",
         }}
       />
 
@@ -66,8 +67,8 @@ export default function OpenGraphImage() {
         >
           <div
             style={{
-              border: "2px solid #f9b5ac",
-              color: "#f9b5ac",
+              border: "2px solid #ff544b",
+              color: "#ff544b",
               fontSize: 28,
               letterSpacing: 3,
               padding: "10px 16px",
@@ -79,11 +80,11 @@ export default function OpenGraphImage() {
           <div
             style={{
               fontSize: 22,
-              color: "#bdbdbd",
+              color: "#a3a3a3",
               display: "flex",
             }}
           >
-            Portfolio
+            Portfolio profesional
           </div>
         </div>
 
@@ -108,22 +109,24 @@ export default function OpenGraphImage() {
           <div
             style={{
               fontSize: 40,
-              color: "#f9b5ac",
+              color: "#ff544b",
               fontWeight: 600,
               display: "flex",
             }}
           >
-            Full Stack Developer
+            Proyectos, experiencia y stack técnico
           </div>
           <div
             style={{
               fontSize: 30,
-              color: "#cfcfcf",
+              color: "#d4d4d4",
               lineHeight: 1.35,
               display: "flex",
             }}
           >
-            React, Next.js, TypeScript and scalable web products from Barcelona.
+            Sitio bilingue con trayectoria profesional, proyectos reales y
+            perfil Full Stack enfocado en React, Next.js, TypeScript y
+            desarrollo web escalable.
           </div>
         </div>
 
@@ -137,7 +140,7 @@ export default function OpenGraphImage() {
           <div
             style={{
               fontSize: 26,
-              color: "#9b9b9b",
+              color: "#a3a3a3",
               display: "flex",
             }}
           >
@@ -146,11 +149,11 @@ export default function OpenGraphImage() {
           <div
             style={{
               fontSize: 24,
-              color: "#9b9b9b",
+              color: "#a3a3a3",
               display: "flex",
             }}
           >
-            ES / EN
+            ES / EN · Contacto disponible
           </div>
         </div>
       </div>
