@@ -134,6 +134,9 @@ export const literals = {
       featuredLabel: "PROYECTO_DESTACADO",
       liveLabel: "VER_PROYECTO",
       sourceLabel: "VER_CODIGO",
+      workInProgressLabel: "WOK_IN_PROGRESS",
+      comingSoonTitle: "Próximamente",
+      comingSoonDescription: "Nuevo proyecto en preparación.",
       items: [
         {
           title: "Albert Casti Portfolio",
@@ -338,6 +341,9 @@ export const literals = {
       featuredLabel: "FEATURED_PROJECT",
       liveLabel: "VIEW_PROJECT",
       sourceLabel: "VIEW_SOURCE",
+      workInProgressLabel: "WOK_IN_PROGRESS",
+      comingSoonTitle: "Coming Soon",
+      comingSoonDescription: "New project in progress.",
       items: [
         {
           title: "Albert Casti Portfolio",

@@ -32,7 +32,7 @@ export default function Header({
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
   return (
-    <header className="bg-[#0E0E0E]">
+    <header className="futuristic-header bg-[#0E0E0E]">
       <nav className="max-w-7xl mx-auto p-4 flex justify-between items-center relative">
         <Link
           href="/"

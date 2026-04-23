@@ -12,7 +12,11 @@ const spaceGrotesk = Space_Grotesk({
 
 export default function Footer({ literals }: FooterProps) {
   return (
-    <footer className="w-full bg-[#0E0E0E] border-t border-neutral-900 p-4">
+    <footer
+      data-aos="fade-up"
+      data-aos-delay="120"
+      className="futuristic-footer w-full bg-[#0E0E0E] border-t border-[#171717] p-4"
+    >
       <div
         className={`${spaceGrotesk.className} mx-auto flex w-full max-w-7xl items-center justify-between gap-4`}
       >
@@ -26,7 +30,7 @@ export default function Footer({ literals }: FooterProps) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={literals.linkedinAriaLabel}
-            className="text-[#8C8C8C] transition hover:text-(--primary)"
+            className="footer-social text-[#8C8C8C] transition hover:text-(--primary)"
           >
             <FaLinkedin className="h-4 w-4" />
           </a>
@@ -35,7 +39,7 @@ export default function Footer({ literals }: FooterProps) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={literals.githubAriaLabel}
-            className="text-[#8C8C8C] transition hover:text-(--primary)"
+            className="footer-social text-[#8C8C8C] transition hover:text-(--primary)"
           >
             <FaGithub className="h-4 w-4" />
           </a>

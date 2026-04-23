@@ -24,12 +24,12 @@ export default function ExperienceSection({
   return (
     <section
       id="experience"
-      className="w-full flex justify-center px-4 py-8 md:py-10 lg:min-h-screen lg:items-center"
+      className="futuristic-section w-full flex justify-center px-4 py-8 md:py-10 lg:min-h-screen lg:items-center"
     >
-      <div className="w-full max-w-5xl">
+      <div data-aos="fade-up" data-aos-delay="110" className="w-full max-w-5xl">
         <div className="flex flex-col items-center text-center gap-4 mb-7 md:mb-8">
-          <div className="inline-flex items-center border border-(--primary) px-6 py-1 text-(--primary)">
-            <span className={`${spaceGrotesk.className} text-xs tracking-wide`}>
+          <div className="section-kicker inline-flex items-center">
+            <span className={`${spaceGrotesk.className} section-kicker-text`}>
               {literals.sectionLabel}
             </span>
           </div>
@@ -40,24 +40,27 @@ export default function ExperienceSection({
           </h2>
         </div>
 
-        <div className="space-y-5 md:space-y-6 pb-2">
+        <div className="space-y-5 pb-2 md:space-y-6">
           {literals.jobs.map((job, index) => (
             <SectionCard
               key={`${job.company}-${job.period}`}
               variant="experience"
+              aosDelay={index * 85}
               className="relative px-5 md:px-6 py-4 md:py-5"
             >
               {index === 0 && (
-                <div className="absolute top-3 right-3 md:top-4 md:right-4 inline-flex items-center bg-[#222222] border-l-2 border-[#F9B5AC] px-3 py-1">
+                <div className="absolute top-3 right-3 md:top-4 md:right-4">
                   <span
-                    className={`${spaceGrotesk.className} text-[#F9B5AC] text-xs tracking-wide`}
+                    className={`${spaceGrotesk.className} inline-flex items-center border-l-2 border-[#F9B5AC] bg-[#353535] px-3 py-1 text-[#F9B5AC]`}
                   >
                     {literals.currentJobLabel}
                   </span>
                 </div>
               )}
 
-              <p className="text-[#7C7C7C] text-sm mb-3">{job.period}</p>
+              <p className={`${spaceGrotesk.className} ui-status-badge mb-3`}>
+                {job.period}
+              </p>
               <h3 className={`${spaceGrotesk.className} leading-tight mb-2.5`}>
                 <span className="block text-white text-base md:text-xl">
                   {job.company}
@@ -66,7 +69,7 @@ export default function ExperienceSection({
                   {job.role}
                 </span>
               </h3>
-              <ul className="max-w-[90ch] space-y-2.5 text-[#8C8C8C] text-sm md:text-base leading-relaxed">
+              <ul className="ui-muted-copy max-w-[90ch] space-y-2.5 text-sm md:text-base">
                 {getDescriptionPoints(job.description).map((point) => (
                   <li key={point} className="flex items-start gap-2.5">
                     <Square

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { siteUrl, siteUrlObject } from "../lib/seo";
 import "./globals.css";
+import "aos/dist/aos.css";
 
 export const metadata: Metadata = {
   metadataBase: siteUrlObject,

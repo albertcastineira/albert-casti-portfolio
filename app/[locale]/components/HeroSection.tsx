@@ -4,6 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import type { HeroLiterals } from "../../../i18n/literals";
 import Badge from "./Badge";
 import Button from "./Button";
+import ScrambleText from "./ScrambleText";
 
 type HeroSectionProps = {
   literals: HeroLiterals;
@@ -20,7 +21,7 @@ export default function HeroSection({ literals }: HeroSectionProps) {
   return (
     <section
       id="hero"
-      className="relative min-h-[calc(100svh-80px)] flex items-center justify-center px-4 py-10 overflow-hidden"
+      className="hero-atmosphere futuristic-section relative min-h-[calc(100svh-80px)] flex items-center justify-center px-4 py-10 overflow-hidden"
     >
       <div className="absolute top-3 sm:top-4 md:top-6 lg:top-8 inset-x-0 pointer-events-none select-none">
         <div className="max-w-7xl mx-auto px-4 flex justify-end">
@@ -52,7 +53,7 @@ export default function HeroSection({ literals }: HeroSectionProps) {
 
       <div className="relative z-10 w-full max-w-7xl grid grid-cols-1 md:grid-cols-10 gap-10 md:gap-14 items-center">
         <div className="md:col-span-4 flex justify-center">
-          <div className="relative w-full max-w-55 md:max-w-[320px] aspect-square overflow-hidden border-4 border-white bg-neutral-900">
+          <div className="hero-avatar-shell relative w-full max-w-55 md:max-w-[320px] aspect-square overflow-hidden border-4 border-white bg-neutral-900">
             <Image
               src="/AlbertCastiñeira.jpg"
               alt={literals.imageAlt}
@@ -75,7 +76,11 @@ export default function HeroSection({ literals }: HeroSectionProps) {
             {literals.description}
           </p>
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 sm:gap-5">
-            <Button text={literals.button} href={mailtoHref} />
+            <Button
+              text={<ScrambleText text={literals.button} />}
+              href={mailtoHref}
+              className="hero-scramble-btn"
+            />
             <a
               href={literals.linkedinUrl}
               target="_blank"

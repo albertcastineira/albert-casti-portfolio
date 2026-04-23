@@ -1,0 +1,26 @@
+"use client";
+
+import { useEffect } from "react";
+import AOS from "aos";
+
+export default function AosInit() {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 90,
+      mirror: false,
+    });
+
+    const rafId = window.requestAnimationFrame(() => {
+      AOS.refreshHard();
+    });
+
+    return () => {
+      window.cancelAnimationFrame(rafId);
+    };
+  }, []);
+
+  return null;
+}

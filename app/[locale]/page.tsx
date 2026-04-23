@@ -4,6 +4,7 @@ import HeroSection from "./components/HeroSection";
 import ExperienceSection from "./components/ExperienceSection";
 import ProjectsSection from "./components/ProjectsSection";
 import Footer from "./components/Footer";
+import AosInit from "./components/AosInit";
 import { notFound } from "next/navigation";
 import { isAppLocale, literals } from "../../i18n/literals";
 
@@ -47,6 +48,7 @@ export default async function Home({
 
   return (
     <main className="flex min-h-screen flex-col">
+      <AosInit />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(projectsJsonLd) }}
