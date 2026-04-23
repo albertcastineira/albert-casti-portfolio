@@ -108,21 +108,21 @@ export const literals = {
           role: "Desarrollador de Software",
           company: "SopraSteria",
           description:
-            "Desarrollo de múltiples aplicaciones en React. Creación y mantenimiento de Single Page Applications usando como base ReactJS. Uso de herramientas y frameworks internos para el desarrollo de aplicaciones bancarias. Desarrollo e implementación de un flujo frontend para la realización de transferencias bancarias, guiado por un panel de pasos intuitivo adaptado a la experiencia del usuario. Creación de test unitarios y de integración con Jest y React Testing Library.",
+            "Desarrollo de una aplicación desde cero para transferencias bancarias internacionales, construida sobre tecnologías modernas y adaptada a requisitos específicos del cliente. Integración con un sistema bancario basado en APIs existentes, gestionando la comunicación y consumo de servicios financieros desde el frontend. Participación clave en el desarrollo y mantenimiento del core bancario del frontend, implementando la lógica crítica de pagos y transferencias, garantizando robustez, coherencia funcional y fiabilidad en operaciones de alta criticidad.",
         },
         {
           period: "Enero 2023 - Marzo 2023",
           role: "Desarrollador de Software",
           company: "b2brouter",
           description:
-            "Desarrollo de una plataforma de facturación con Ruby on Rails, Tailwind-CSS y PostgreSQL. Llevé a cabo parte de la renovación del frontend. Implementación y desarrollo de un sistema de certificados digitales para las facturas, incluyendo sus correspondientes test. En backend realizaba pruebas y validaciones de facturas.",
+            "Desarrollo de backend y frontend para una plataforma de gestión de facturación electrónica, cumpliendo con estándares de certificación y normativas regulatorias aplicables. Participación en el diseño e implementación de funcionalidades para la generación, validación y gestión de facturas electrónicas en entornos empresariales. Responsabilidad en la migración completa de la interfaz de usuario desde un frontend legacy hacia una nueva arquitectura, mejorando la mantenibilidad del sistema y la experiencia de usuario.",
         },
         {
-          period: "Enero 2021 - Diciembre 2022",
+          period: "Mayo 2021 - Diciembre 2022",
           role: "Desarrollador de Software",
           company: "Databot Technologies",
           description:
-            "Desarrollo de varias plataformas de gestión de objetos personalizadas para cada cliente. El stack utilizado fue: Ruby on Rails, Bootstrap, Tailwind CSS, React, Vanilla JS, CSS y MySQL. Creación de landing pages pixel perfect para diversos clientes internacionales. Configuración de un motor de búsqueda SOLR.",
+            "Desarrollo de landings personalizadas adaptadas a diferentes tipos de clientes y sectores, garantizando una experiencia de usuario alineada con las necesidades específicas de cada negocio. Participación en el desarrollo y mantenimiento del producto core de la empresa, una aplicación orientada a la gestión, indexación y organización de ficheros en entornos empresariales, optimizando el acceso a la información y mejorando los flujos de trabajo internos.",
         },
       ],
     },
@@ -312,21 +312,21 @@ export const literals = {
           role: "Software Developer",
           company: "SopraSteria",
           description:
-            "Development of multiple applications in React. Creation and maintenance of Single Page Applications using ReactJS as a base. Use of internal tools and frameworks for the development of banking applications. Development and implementation of a frontend flow for performing bank transfers, guided by an intuitive step-by-step panel tailored to the user experience. Creation of unit and integration tests with Jest and React Testing Library.",
+            "Development of an application from scratch for international bank transfers, built on modern technologies and tailored to specific client requirements. Integration with an existing API-based banking system, managing communication and consumption of financial services from the frontend. Key participation in the development and maintenance of the banking frontend core, implementing critical payment and transfer logic, ensuring robustness, functional consistency and reliability in high-criticality operations.",
         },
         {
           period: "January 2023 - March 2023",
           role: "Software Developer",
           company: "b2brouter",
           description:
-            "Development of a billing platform with Ruby on Rails, Tailwind-CSS, PostgreSQL. I was carrying out part of the frontend renovation. Implementation and development of a digital certificate system for invoices, including their corresponding tests. In backend I was performing tests and validations of invoices.",
+            "Backend and frontend development for an electronic invoicing management platform, complying with certification standards and applicable regulatory requirements. Participation in the design and implementation of features for the generation, validation and management of electronic invoices in enterprise environments. Responsible for the full migration of the user interface from a legacy frontend to a new architecture, improving system maintainability and user experience.",
         },
         {
-          period: "January 2021 - December 2022",
+          period: "May 2021 - December 2022",
           role: "Software Developer",
           company: "Databot Technologies",
           description:
-            "Development of several object management platforms customized for each client. The tech stack was: Ruby on Rails, Bootstrap, Tailwind CSS, React, Vanilla JS, CSS, MySQL. Creation of pixel perfect landing pages for various international clients. Configuration of a SOLR search engine.",
+            "Development of custom landing pages tailored to different client types and sectors, ensuring a user experience aligned with each business's specific needs. Participation in the development and maintenance of the company's core product, an application focused on file management, indexing and organization in enterprise environments, optimizing information access and improving internal workflows.",
         },
       ],
     },
