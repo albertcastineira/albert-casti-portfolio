@@ -2,6 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 import { Space_Grotesk } from "next/font/google";
 import { FaGithub } from "react-icons/fa";
 import type { ProjectsLiterals } from "../../../i18n/literals";
+import SectionCard from "./SectionCard";
 
 type ProjectsSectionProps = {
   literals: ProjectsLiterals;
@@ -43,11 +44,11 @@ export default function ProjectsSection({ literals }: ProjectsSectionProps) {
         </div>
 
         <div className="grid gap-5 md:gap-6">
-          <article className="border border-neutral-800 bg-[#0A0A0A] p-5 md:p-8">
+          <SectionCard variant="featuredProject" className="p-5 md:p-8">
             <div className="mb-5 flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
               <div className="max-w-3xl">
                 <p
-                  className={`${spaceGrotesk.className} mb-3 text-xs tracking-[0.24em] text-(--primary)`}
+                  className={`${spaceGrotesk.className} mb-3 inline-flex items-center border border-(--primary) bg-[#211312] px-3 py-1 text-xs tracking-[0.24em] text-(--primary)`}
                 >
                   {literals.featuredLabel}
                 </p>
@@ -97,13 +98,14 @@ export default function ProjectsSection({ literals }: ProjectsSectionProps) {
                 </span>
               ))}
             </div>
-          </article>
+          </SectionCard>
 
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
             {otherProjects.map((project) => (
-              <article
+              <SectionCard
                 key={project.title}
-                className="flex h-full flex-col border-l-4 border-(--primary) bg-[#0A0A0A] px-5 py-5 md:px-6 md:py-6"
+                variant="project"
+                className="flex h-full flex-col px-5 py-5 md:px-6 md:py-6"
               >
                 <div className="mb-5 flex items-start justify-between gap-4">
                   <h3
@@ -151,7 +153,7 @@ export default function ProjectsSection({ literals }: ProjectsSectionProps) {
                     </span>
                   ))}
                 </div>
-              </article>
+              </SectionCard>
             ))}
           </div>
         </div>

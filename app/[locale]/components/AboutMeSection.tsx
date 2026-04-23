@@ -1,5 +1,6 @@
 import { Space_Grotesk } from "next/font/google";
 import type { AboutMeLiterals } from "../../../i18n/literals";
+import SectionCard from "./SectionCard";
 
 type AboutMeSectionProps = {
   literals: AboutMeLiterals;
@@ -34,9 +35,10 @@ export default function AboutMeSection({ literals }: AboutMeSectionProps) {
 
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-6">
           {literals.blocks.map((block) => (
-            <article
+            <SectionCard
               key={block.title}
-              className="bg-[#0A0A0A] border-l-4 border-(--primary) px-5 md:px-6 py-5 md:py-6"
+              variant="about"
+              className="px-5 md:px-6 py-5 md:py-6"
             >
               <h3
                 className={`${spaceGrotesk.className} text-white text-lg md:text-2xl leading-tight mb-6`}
@@ -53,7 +55,7 @@ export default function AboutMeSection({ literals }: AboutMeSectionProps) {
                   </span>
                 ))}
               </div>
-            </article>
+            </SectionCard>
           ))}
         </div>
       </div>

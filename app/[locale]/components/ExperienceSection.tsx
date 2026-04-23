@@ -1,5 +1,7 @@
+import { Square } from "lucide-react";
 import { Space_Grotesk } from "next/font/google";
 import type { ExperienceLiterals } from "../../../i18n/literals";
+import SectionCard from "./SectionCard";
 
 type ExperienceSectionProps = {
   literals: ExperienceLiterals;
@@ -8,6 +10,13 @@ type ExperienceSectionProps = {
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
 });
+
+function getDescriptionPoints(description: string) {
+  return description
+    .split(/(?<=[.!?])\s+/)
+    .map((point) => point.trim())
+    .filter(Boolean);
+}
 
 export default function ExperienceSection({
   literals,
@@ -33,9 +42,10 @@ export default function ExperienceSection({
 
         <div className="space-y-5 md:space-y-6 pb-2">
           {literals.jobs.map((job, index) => (
-            <article
+            <SectionCard
               key={`${job.company}-${job.period}`}
-              className="relative bg-[#0A0A0A] border-l-4 border-(--primary) px-5 md:px-6 py-4 md:py-5"
+              variant="experience"
+              className="relative px-5 md:px-6 py-4 md:py-5"
             >
               {index === 0 && (
                 <div className="absolute top-3 right-3 md:top-4 md:right-4 inline-flex items-center bg-[#222222] border-l-2 border-[#F9B5AC] px-3 py-1">
@@ -48,18 +58,27 @@ export default function ExperienceSection({
               )}
 
               <p className="text-[#7C7C7C] text-sm mb-3">{job.period}</p>
-              <h3
-                className={`${spaceGrotesk.className} text-xl md:text-3xl leading-tight mb-2.5`}
-              >
-                <span className="text-(--primary) font-semibold">
+              <h3 className={`${spaceGrotesk.className} leading-tight mb-2.5`}>
+                <span className="block text-white text-base md:text-xl">
+                  {job.company}
+                </span>
+                <span className="block text-(--primary) font-semibold text-xl md:text-3xl">
                   {job.role}
                 </span>
-                <span className="text-white"> - {job.company}</span>
               </h3>
-              <p className="text-[#8C8C8C] text-sm md:text-base leading-relaxed max-w-[90ch]">
-                {job.description}
-              </p>
-            </article>
+              <ul className="max-w-[90ch] space-y-2.5 text-[#8C8C8C] text-sm md:text-base leading-relaxed">
+                {getDescriptionPoints(job.description).map((point) => (
+                  <li key={point} className="flex items-start gap-2.5">
+                    <Square
+                      aria-hidden="true"
+                      size={10}
+                      className="mt-1.5 shrink-0 fill-current text-current"
+                    />
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
+            </SectionCard>
           ))}
         </div>
       </div>
