@@ -49,9 +49,9 @@ export default function ExperienceSection({
               className="relative px-5 md:px-6 py-4 md:py-5"
             >
               {index === 0 && (
-                <div className="absolute top-3 right-3 md:top-4 md:right-4">
+                <div className="absolute top-2 right-2 md:top-4 md:right-4">
                   <span
-                    className={`${spaceGrotesk.className} inline-flex items-center border-l-2 border-[#F9B5AC] bg-[#353535] px-3 py-1 text-[#F9B5AC]`}
+                    className={`${spaceGrotesk.className} inline-flex items-center justify-center text-center border-l-2 border-[#F9B5AC] bg-[#353535] px-2 py-1 text-[10px] leading-[1.15] text-[#F9B5AC] md:px-3 md:py-1 md:text-sm`}
                   >
                     {literals.currentJobLabel}
                   </span>
