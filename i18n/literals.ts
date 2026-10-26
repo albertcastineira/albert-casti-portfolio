@@ -17,9 +17,10 @@ export const literals = {
       badge: "FULLSTACK_DEVELOPER",
       title: "Albert Castiñeira",
       description:
-        "Desarrollador Full Stack con más de 3 años de experiencia, ubicado en Barcelona, España.",
+        "Desarrollador Full Stack con más de {years} años de experiencia, ubicado en Barcelona, España.",
+      descriptionSince: "Desarrollador Full Stack con experiencia desde 2022, ubicado en Barcelona, España.",
       seoDescription:
-        "Desarrollador Full Stack con más de 3 años de experiencia en Barcelona. Especializado en React, Next.js y Ruby on Rails. Explora mis proyectos, experiencia laboral y habilidades técnicas.",
+        "Desarrollador Full Stack con experiencia desde 2022 en Barcelona. Especializado en React, Next.js y Ruby on Rails. Explora mis proyectos, experiencia laboral y habilidades técnicas.",
       imageAlt: "Foto de perfil de Albert Castiñeira",
       button: "CONTACTAME",
       contactEmail: "albertcastiaran@gmail.com",
@@ -134,7 +135,7 @@ export const literals = {
       featuredLabel: "PROYECTO_DESTACADO",
       liveLabel: "VER_PROYECTO",
       sourceLabel: "VER_CODIGO",
-      workInProgressLabel: "WOK_IN_PROGRESS",
+      workInProgressLabel: "WORK_IN_PROGRESS",
       comingSoonTitle: "Próximamente",
       comingSoonDescription: "Nuevo proyecto en preparación.",
       items: [
@@ -224,9 +225,10 @@ export const literals = {
       badge: "FULLSTACK_DEVELOPER",
       title: "Albert Castiñeira",
       description:
-        "Full Stack Developer with more than 3 years of experience, based in Barcelona, Spain.",
+        "Full Stack Developer with more than {years} years of experience, based in Barcelona, Spain.",
+      descriptionSince: "Full Stack Developer with experience since 2022, based in Barcelona, Spain.",
       seoDescription:
-        "Full Stack Developer with over 3 years of experience based in Barcelona, Spain. Specialized in React, Next.js and Ruby on Rails. Browse my projects, work experience and technical skills.",
+        "Full Stack Developer with experience since 2022 based in Barcelona, Spain. Specialized in React, Next.js and Ruby on Rails. Browse my projects, work experience and technical skills.",
       imageAlt: "Profile photo of Albert Castiñeira",
       button: "CONTACT_ME",
       contactEmail: "albertcastiaran@gmail.com",
@@ -341,7 +343,7 @@ export const literals = {
       featuredLabel: "FEATURED_PROJECT",
       liveLabel: "VIEW_PROJECT",
       sourceLabel: "VIEW_SOURCE",
-      workInProgressLabel: "WOK_IN_PROGRESS",
+      workInProgressLabel: "WORK_IN_PROGRESS",
       comingSoonTitle: "Coming Soon",
       comingSoonDescription: "New project in progress.",
       items: [

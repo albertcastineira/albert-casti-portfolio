@@ -5,6 +5,7 @@ import type { HeroLiterals } from "../../../i18n/literals";
 import Badge from "./Badge";
 import Button from "./Button";
 import ScrambleText from "./ScrambleText";
+import ExperienceDescription from "./ExperienceDescription";
 
 type HeroSectionProps = {
   literals: HeroLiterals;
@@ -55,7 +56,7 @@ export default function HeroSection({ literals }: HeroSectionProps) {
         <div className="md:col-span-4 flex justify-center">
           <div className="hero-avatar-shell relative w-full max-w-55 md:max-w-[320px] aspect-square overflow-hidden border-4 border-white bg-neutral-900">
             <Image
-              src="/AlbertCastiñeira.jpg"
+              src="/AlbertCastiñeira.png"
               alt={literals.imageAlt}
               fill
               sizes="(max-width: 768px) 220px, 320px"
@@ -73,7 +74,7 @@ export default function HeroSection({ literals }: HeroSectionProps) {
             {literals.title}
           </h1>
           <p className="text-[#8C8C8C] text-base md:text-lg leading-relaxed max-w-2xl">
-            {literals.description}
+            <ExperienceDescription template={literals.description} fallback={literals.descriptionSince} />
           </p>
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 sm:gap-5">
             <Button

@@ -73,7 +73,7 @@ export default async function LocaleLayout({
     name: "Albert Castineira",
     alternateName: "Albert Dev",
     url: siteUrl,
-    image: `${siteUrl}/AlbertCastiñeira.jpg`,
+    image: `${siteUrl}/AlbertCastiñeira.png`,
     jobTitle: "Full Stack Developer",
     address: {
       "@type": "PostalAddress",
